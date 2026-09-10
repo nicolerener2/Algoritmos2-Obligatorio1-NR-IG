@@ -8,7 +8,9 @@
 > con comentarios en el código fuente. La omisión de fuentes puede considerarse plagio.
 
 ## Ejercicio 1
-- Implementación íntegramente propia, sin fuentes externas.
+- Nos basamos en la implementación vista en clase de AVL (semana 2),
+  adaptado para este ejercicio puntual.
+- Le preguntamos a chat GPT que nos explique las difernecia de que va en private, public y main.
 
 ## Ejercicio 2
 - Implementación íntegramente propia, sin fuentes externas.

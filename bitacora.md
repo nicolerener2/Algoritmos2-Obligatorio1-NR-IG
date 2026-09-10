@@ -9,5 +9,5 @@
   complejidad pide ..., así que ...
 
 ## 2026-09-10 — En conjunto
-- Ejemplo: Implementamos ... Bug: ... Lo corregimos ...
-- Pasan los casos de prueba 1 a 4 del ejercicio 1.
+- Hicimos el ejercicio 1 completo.
+- Falta hacer las pruebas.
