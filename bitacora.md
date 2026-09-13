@@ -11,3 +11,7 @@
 ## 2026-09-10 — En conjunto
 - Hicimos el ejercicio 1 completo.
 - Falta hacer las pruebas.
+
+## 2026-09-13 — En conjunto
+- Hicimos el ejercicio 2 completo.
+- Falta hacer las pruebas.
