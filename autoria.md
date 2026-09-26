@@ -13,12 +13,13 @@
 - Le preguntamos a chat GPT que nos explique las difernecia de que va en private, public y main.
 
 ## Ejercicio 2
-- Nos basamos un poco en la implementación vista en clase de Hash Cerrado (semana) y en los función de Hash vistos en clase. 
+- Nos basamos un poco en la implementación vista en clase de Hash Cerrado (semana 3) y en los función de Hash vistos en clase. 
 - También nos basamos en el codigo sobre hash abierto visto en algoritmos 1. 
-- Le preguntamos a chat GPT que nos explique como pasaar de string a char.
+- Le preguntamos a chat GPT que nos explique como pasar de string a char.
 
 ## Ejercicio 3
-- Implementación íntegramente propia, sin fuentes externas.
+- Nos basamos bastante en la implementación vista en clase de Heap binario (semana 4). 
+- El resto fue implementación propia.
 
 ## Ejercicio 4
 - Implementación íntegramente propia, sin fuentes externas.
