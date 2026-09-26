@@ -10,8 +10,7 @@ private:
     int capacidad;
     int ultimoOcupado;
 
-    //PRE: -
-    //POS: Retorna true si el primer parámetro va antes que el segundo
+    //POS:Devuelve true si el primer elemento debe estar antes que el segundo en el heap.
     bool (*comparar)(T, T);
 
     int padre(int pos) {
