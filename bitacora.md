@@ -21,4 +21,9 @@
 - Falta hacer las pruebas.
 
 ## 2026-10-10 - Inés 
-- Hice el ejericio 4. Estuve viendo el código de MaxHeap de las diapostivas vistas en clase. Era necesario pasarlo a MinHeap y hacerle algunas modificaciones más, asi que repase como habiamos hecho los ejericios anteriores y me di cuenta que la iplementacion era mucho mas similar a la del ejericio 3. Decidi basarme entonces en ese codigo para cumplir con los objetivos de la consigna. 
+
+## 2026-10-10 — Inés
+- Hice el ejercicio 4. Primero estuve viendo el código de MaxHeap de las diapositivas de clase, ya que necesitaba adaptarlo a un MinHeap. Después repasé los ejercicios anteriores y me di cuenta de que el código del ejercicio 3 me servía mucho más, porque ya tenía una función para comparar los elementos. Entonces decidí basarme en ese.
+- Después tuve que pensar cómo guardar las dependencias entre los módulos. Se me ocurrió usar listas de adyacencia con punteros, donde cada módulo tuviera una lista de los que dependían de él.
+- También tuve que tener en cuenta que en el heap solo podían estar los módulos listos para compilarse. Lo que más me costó fue darme cuenta de cómo saber cuándo un módulo quedaba listo. Para eso usé un arreglo que contara las dependencias pendientes de cada uno, y cada vez que se compilaba un módulo, se les restaba una dependencia a los que lo estaban esperando.
+- Por último, fui guardando el orden de compilación en un arreglo y usé una variable para contar cuántos módulos se habían compilado. Así, si al terminar esa cantidad era menor que el total de módulos, podía saber que había un ciclo e imprimir `imposible`.
