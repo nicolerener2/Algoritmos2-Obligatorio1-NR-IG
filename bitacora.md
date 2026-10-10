@@ -19,3 +19,6 @@
 ## 2026-09-26 — Nicole
 - Hice el ejercicio 3 completo. Nos fue de gran ayuda lo visto en clase. 
 - Falta hacer las pruebas.
+
+## 2026-10-10 - Inés 
+- Hice el ejericio 4. Estuve viendo el código de MaxHeap de las diapostivas vistas en clase. Era necesario pasarlo a MinHeap y hacerle algunas modificaciones más, asi que repase como habiamos hecho los ejericios anteriores y me di cuenta que la iplementacion era mucho mas similar a la del ejericio 3. Decidi basarme entonces en ese codigo para cumplir con los objetivos de la consigna. 
