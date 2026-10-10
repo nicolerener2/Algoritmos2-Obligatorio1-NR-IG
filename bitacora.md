@@ -20,8 +20,6 @@
 - Hice el ejercicio 3 completo. Nos fue de gran ayuda lo visto en clase. 
 - Falta hacer las pruebas.
 
-## 2026-10-10 - Inés 
-
 ## 2026-10-10 — Inés
 - Hice el ejercicio 4. Primero estuve viendo el código de MaxHeap de las diapositivas de clase, ya que necesitaba adaptarlo a un MinHeap. Después repasé los ejercicios anteriores y me di cuenta de que el código del ejercicio 3 me servía mucho más, porque ya tenía una función para comparar los elementos. Entonces decidí basarme en ese.
 - Después tuve que pensar cómo guardar las dependencias entre los módulos. Se me ocurrió usar listas de adyacencia con punteros, donde cada módulo tuviera una lista de los que dependían de él.
