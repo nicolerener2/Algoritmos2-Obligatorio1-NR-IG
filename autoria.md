@@ -24,6 +24,10 @@
 ## Ejercicio 4
 - Implementación íntegramente propia, sin fuentes externas.
 
-## Ejercicio 5
-- Implementación íntegramente propia, sin fuentes externas.
+//FALTAAA
 
+## Ejercicio 5
+- Nos basamos en lo visto en clase de MFset y Kruskal, revise las diapositivas para ayudarme.
+
+## General
+- Usamos chat gpt para revisar si las biblotecas estaban bien, y agregar en caso de que falten. También para revisar errores de sintaxis, por ejemplo saltearnos un ";".
