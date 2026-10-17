@@ -22,9 +22,10 @@
 - El resto fue implementación propia.
 
 ## Ejercicio 4
-- Implementación íntegramente propia, sin fuentes externas.
-
-//FALTAAA
+- Nos basamos en la implementación de Heap binario vista en clase (semana 4) y en el código que habíamos hecho para el ejercicio 3, ya que tenía una función para comparar elementos que nos servía para el MinHeap.
+- Para guardar las dependencias entre los módulos usamos listas de adyacencia, basándonos en las estructuras de grafos vistas en clase.
+- Usamos un arreglo para contar las dependencias pendientes de cada módulo y un MinHeap para guardar solamente los que estaban listos para compilar.
+- Por último, usamos un contador para saber cuántos módulos se habían compilado y así detectar si existía un ciclo.
 
 ## Ejercicio 5
 - Nos basamos en lo visto en clase de MFset y Kruskal, revise las diapositivas para ayudarme.
