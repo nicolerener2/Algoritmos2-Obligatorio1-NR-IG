@@ -70,15 +70,15 @@ int main(){
     long long costoTotal = 0;
     int elegidos=0;
 
-    for(int i=0;i<ar && m<ver-1; i++){
+    for(int i=0;i<ar && elegidos<ver-1; i++){
         int origen = senderos[i].origen;
         int destino= senderos[i].destino;
         if(m.merge(origen,destino)){
             costoTotal+= senderos[i].costo;
-            m++;
+            elegidos++;
         }
     }
-    if(m==ver-1){
+    if(elegidos==ver-1){
         cout<< costoTotal << '\n';
     }
     else{
