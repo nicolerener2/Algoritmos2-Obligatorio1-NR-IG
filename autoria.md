@@ -17,7 +17,8 @@
 ## Ejercicio 4
 - Nos basamos en la implementación de heap binario vista en clase (semana 4) y reutilizamos la función de comparación que habíamos desarrollado para el ejercicio 3, adaptándola al MinHeap.
 - Para representar las dependencias entre los módulos mediante listas de adyacencia, nos basamos en las estructuras de grafos vistas en clase.
-- Desarrollamos la lógica para contar las dependencias pendientes, seleccionar los módulos listos para compilar y detectar ciclos.
+- Utilizamos el algoritmo de Kahn (ordenamiento topológico), implementado con un MinHeap para seleccionar los módulos disponibles según su prioridad y número.
+- Adaptamos la lógica del algoritmo para actualizar las dependencias pendientes y detectar ciclos cuando no es posible compilar todos los módulos.
 
 ## Ejercicio 5
 - Nos basamos en los contenidos de MFSet y Kruskal vistos en clase y consultamos las diapositivas correspondientes para implementar la solución.
