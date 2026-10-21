@@ -2,7 +2,7 @@
 #include <string>
 #include <iostream>
 #include <limits>
-//#include <algorithm>  va o no va?
+#include <algorithm> 
 
 using namespace std;
 template <typename T>
