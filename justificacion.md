@@ -18,10 +18,12 @@ Utilizamos un min-heap binario sobre un arreglo, que permite obtener los dos arc
 - Tiempo: O(N log N) en el peor caso. Insertamos inicialmente N archivos, cada uno en O(log N). Luego realizamos N − 1 consolidaciones, cada una con dos eliminaciones del mínimo y una inserción, todas en O(log N), porque flotar y hundir recorren como máximo la altura del heap. Consultar el tope y sumar los costos cuesta O(1).
 - Espacio: O(N). El arreglo del heap tiene capacidad para N elementos y la cantidad de archivos disponibles disminuye con cada consolidación. La recursión de flotar y hundir ocupa O(log N) adicional, por lo que el espacio total sigue siendo O(N).
 - Utilizamos long long para los tamaños y el costo acumulado, ya que pueden superar el rango de un entero de 32 bits.
+
 ## Ejercicio 4
 Utilizamos el algoritmo de Kahn con listas de adyacencia y un min-heap binario, que selecciona el módulo listo de menor prioridad y, en caso de empate, el de menor número.
 - Tiempo: O((V + A) log V) en el peor caso. Construir las listas de adyacencia y calcular los grados de entrada cuesta O(V + A). Cada módulo se inserta y se elimina del heap como máximo una vez, con costo O(log V) por operación. Además, cada dependencia se recorre como máximo una vez para actualizar los pendientes, en O(A). En total, obtenemos O(V log V + A), que cumple la cota exigida.
 - Espacio: O(V + A). Las listas de adyacencia almacenan V cabeceras y A nodos. Los arreglos de prioridades, pendientes y orden, junto con el heap, ocupan O(V).
+
 ## Ejercicio 5
 Utilizamos Kruskal con conjuntos disjuntos (MFset), con compresión de caminos y unión por altura.
 - Tiempo: O(E log E) en el peor caso. Si E < V − 1, respondemos “imposible” en O(1). En caso contrario, V ≤ E + 1, por lo que inicializar el MFset cuesta O(E). Ordenar los senderos cuesta O(E log E), y procesarlos con las optimizaciones del MFset no supera esa cota.

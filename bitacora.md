@@ -36,4 +36,4 @@
 
 ## 2026-10-20 — Inés
 - Realicé las pruebas de todos los ejercicios.
-- Corregí un error de compilación en el ejercicio 5.
+- Corregí un error de compilación en el ejercicio 5. No compilaba porque se estaba utilizando una variable del tipo mfset como un int. Para resolverlo solo fue necesaria cambiar esa variable por elegidos, que es un int.  
