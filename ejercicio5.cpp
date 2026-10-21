@@ -58,6 +58,11 @@ int main(){
     cin >> ver;
     int ar;
     cin >> ar;
+    //no hay suficientes senderos para conectar los refugios.
+    if (ar < ver - 1) {
+        cout << "imposible" << '\n';
+        return 0;
+    }
     vector<Sendero> senderos(ar);
     for(int i=0; i<ar;i++){
         cin >> senderos[i].origen;
