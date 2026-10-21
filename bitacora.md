@@ -2,12 +2,6 @@
 
 **Integrantes:** Nicole Rener (289407), Inés García (356051)
 
-> **Instrucciones** 
-
-## AAAA-MM-DD — Nombre
-- Ejemplo: Leí la letra del ejercicio 1. Primera idea: ... pero la restricción de
-  complejidad pide ..., así que ...
-
 ## 2026-09-10 — En conjunto
 - Implementamos el ejercicio 1 basándonos en lo visto en clase. Nos costó comprender cómo utilizar template en la implementación.
 - Quedaron pendientes las pruebas.
@@ -32,11 +26,13 @@
 - Por último, fui guardando el orden de compilación en un arreglo y usé una variable para contar cuántos módulos se habían compilado. Así, si al terminar esa cantidad era menor que el total de módulos, podía saber que había un ciclo e imprimir `imposible`.
 
 ## 2026-10-17 — Nicole
-- Hice el ejercicio 5. Primero repasé cómo funcionaba Kruskal, porque tenía que conectar todos los refugios con el menor costo posible. Guardé los senderos en un vector y los ordené de menor a mayor costo usando una función para compararlos.
-- Después implementé la estructura de conjuntos disjuntos con un vector de padres y otro llamado altura, utilizado como rango. En find usé compresión de caminos y en merge, unión por rango.
-- Fui recorriendo los senderos ordenados y, cuando sus extremos pertenecían a conjuntos distintos, los unía y sumaba el costo. Si ya estaban en el mismo conjunto, descartaba el sendero porque formaría un ciclo.
-- Usé elegidos para contar cuántos senderos iba agregando. Si al terminar tenía ver - 1, todos los refugios estaban conectados; si no, imprimía “imposible”. Si al terminar tenía V - 1, todos los refugios estaban conectados; si no, imprimía “imposible”.
-- Por último, usé long long para el costo total, porque la suma podía superar el rango de un int. También tuve en cuenta el caso de un solo refugio, donde el resultado es 0 porque no hace falta mantener ningún sendero.
+- Hice el ejercicio 5. Primero repasé cómo funcionaba Kruskal, porque tenía que conectar todos los refugios con el menor costo posible. Guardé los senderos en un array y los ordené de menor a mayor costo usando una función para compararlos.
+- Implementé la estructura de MFset con un array de padres y otro llamado altura, utilizado como rango. En find usé compresión de caminos y en merge, unión por altura.
+- Agregué una comprobación inicial: si hay menos de ver - 1 senderos, imprimo “imposible”, porque no alcanza para conectar todos los refugios.
+- Fui recorriendo los senderos ordenados y buscando los representantes de sus extremos. Cuando pertenecían a conjuntos distintos, los unía y sumaba el costo. Si ya estaban en el mismo conjunto, descartaba el sendero porque formaría un ciclo.
+- Usé elegidos para contar cuántos senderos iba agregando. Si al terminar tenía ver - 1, todos los refugios estaban conectados; si no, imprimía “imposible”.
+- Usé long long para el costo total, porque la suma podía superar el rango de un int. También tuve en cuenta el caso de un solo refugio, donde el resultado es 0 porque no hace falta mantener ningún sendero.
+- Liberé la memoria del arreglo de senderos con delete[] y agregué un destructor al MFset para liberar los arreglos de padres y alturas.
 
 ## 2026-10-20 — Inés
 - Realicé las pruebas de todos los ejercicios.

@@ -2,7 +2,6 @@
 #include <string>
 #include <iostream>
 #include <limits>
-#include <vector>
 #include <algorithm>
 
 using namespace std;
@@ -15,15 +14,16 @@ struct Sendero{
 
 class MFset {
 private:
-    vector<int> padre;
-    vector<int> altura;
+    int* padre;
+    int* altura;
 
 public:
     MFset(int cant){
-        padre.resize(cant+1);
-        altura.resize(cant+1,0);
-        for(int i=1;i<=cant;i++){
-            padre[i]=i;
+        padre = new int[cant + 1];
+        altura = new int[cant + 1];
+        for (int i = 1; i <= cant; i++) {
+            padre[i] = i;
+            altura[i] = 0;
         }
     }
 
@@ -46,6 +46,11 @@ public:
         }
         return true;
     }
+
+    ~MFset() {
+        delete[] padre;
+        delete[] altura;
+    }
 };
 
 bool menorCosto(Sendero a, Sendero b){
@@ -63,13 +68,13 @@ int main(){
         cout << "imposible" << '\n';
         return 0;
     }
-    vector<Sendero> senderos(ar);
+    Sendero* senderos = new Sendero[ar];
     for(int i=0; i<ar;i++){
         cin >> senderos[i].origen;
         cin >> senderos[i].destino;
         cin >> senderos[i].costo;
     }
-    sort(senderos.begin(), senderos.end(),menorCosto);
+    sort(senderos, senderos + ar, menorCosto);
     MFset m(ver);
 
     long long costoTotal = 0;
@@ -78,11 +83,15 @@ int main(){
     for(int i=0;i<ar && elegidos<ver-1; i++){
         int origen = senderos[i].origen;
         int destino= senderos[i].destino;
-        if(m.merge(origen,destino)){
+        int liderY=m.find(origen);
+        int liderX=m.find(destino);
+        if(liderY!=liderX){
+            m.merge(liderY,liderX);
             costoTotal+= senderos[i].costo;
             elegidos++;
         }
     }
+    delete[] senderos;
     if(elegidos==ver-1){
         cout<< costoTotal << '\n';
     }

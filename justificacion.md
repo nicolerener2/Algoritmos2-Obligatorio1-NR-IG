@@ -1,12 +1,5 @@
 # Justificación de órdenes — Obligatorio 1
 
-> **Instrucciones** (borrar esta sección antes de entregar): para cada ejercicio cuya
-> letra plantea restricciones de órdenes (tiempo o espacio), justificar brevemente por
-> qué la solución cumple, indicando qué estructuras de datos o algoritmos se utilizaron.
-> Ejemplo: "La letra exige inserción en O(log n); usamos un min-heap sobre arreglo,
-> donde flotar/hundir recorren a lo sumo la altura del árbol". Si un ejercicio no tiene
-> restricciones de órdenes, indicarlo.
-
 ## Ejercicio 1
 Utilizamos un único AVL parametrizado por tipo, instanciado para monedas y pinturas. Siendo K la cantidad de piezas registradas en la colección:
 - ALTA: O(log K) en el peor caso. Recorre un camino del árbol para insertar y actualiza las alturas y el balance al regresar. Como el AVL mantiene altura O(log K) y cada rotación cuesta O(1), se cumple el orden.
@@ -30,8 +23,8 @@ Utilizamos el algoritmo de Kahn con listas de adyacencia y un min-heap binario, 
 - Tiempo: O((V + A) log V) en el peor caso. Construir las listas de adyacencia y calcular los grados de entrada cuesta O(V + A). Cada módulo se inserta y se elimina del heap como máximo una vez, con costo O(log V) por operación. Además, cada dependencia se recorre como máximo una vez para actualizar los pendientes, en O(A). En total, obtenemos O(V log V + A), que cumple la cota exigida.
 - Espacio: O(V + A). Las listas de adyacencia almacenan V cabeceras y A nodos. Los arreglos de prioridades, pendientes y orden, junto con el heap, ocupan O(V).
 ## Ejercicio 5
-tilizamos Kruskal con conjuntos disjuntos (MFset), con compresión de caminos y unión por altura.
+Utilizamos Kruskal con conjuntos disjuntos (MFset), con compresión de caminos y unión por altura.
 - Tiempo: O(E log E) en el peor caso. Si E < V − 1, respondemos “imposible” en O(1). En caso contrario, V ≤ E + 1, por lo que inicializar el MFset cuesta O(E). Ordenar los senderos cuesta O(E log E), y procesarlos con las optimizaciones del MFset no supera esa cota.
-- Espacio: O(V + E). Guardamos E senderos y dos vectores de tamaño V + 1 para los padres y las alturas.
+- Espacio: O(V + E). Guardamos E senderos en un arreglo dinámico y utilizamos otros dos arreglos dinámicos de tamaño V + 1 para los padres y las alturas.
 - Utilizamos long long para el costo total, porque puede superar el rango de un entero de 32 bits.
 
