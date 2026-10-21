@@ -1,34 +1,27 @@
 # Declaración de autoría — Obligatorio 1
 
-> **Instrucciones** (borrar esta sección antes de entregar): declarar para cada ejercicio
-> las fuentes utilizadas: código discutido o desarrollado en clase, recursos web (con URL)
-> y uso de herramientas de IA generativa (herramienta, consulta y uso dado, según los
-> lineamientos de Uso de IA de la letra). Si no se usaron fuentes externas, indicarlo
-> explícitamente. Los fragmentos de terceros o generados por IA deben además señalarse
-> con comentarios en el código fuente. La omisión de fuentes puede considerarse plagio.
-
 ## Ejercicio 1
 - Nos basamos en la implementación vista en clase de AVL (semana 2),
   adaptado para este ejercicio puntual.
-- Le preguntamos a chat GPT que nos explique las difernecia de que va en private, public y main.
+- Consultamos a ChatGPT para comprender qué elementos debían declararse como private y public, y qué código correspondía al main. Utilizamos la explicación para organizar nuestra implementación.
 
 ## Ejercicio 2
 - Nos basamos un poco en la implementación vista en clase de Hash Cerrado (semana 3) y en los función de Hash vistos en clase. 
 - También nos basamos en el codigo sobre hash abierto visto en algoritmos 1. 
-- Le preguntamos a chat GPT que nos explique como pasar de string a char.
+- Consultamos a ChatGPT sobre cómo pasar de string a char y utilizamos la respuesta como ayuda para realizar esa conversión en nuestra implementación.
 
 ## Ejercicio 3
-- Nos basamos bastante en la implementación vista en clase de Heap binario (semana 4). 
-- El resto fue implementación propia.
+- Nos basamos en la implementación de heap binario vista en clase (semana 4), adaptándola a los requisitos del ejercicio.
+- El resto de la implementación fue desarrollado por nosotras.
 
 ## Ejercicio 4
-- Nos basamos en la implementación de Heap binario vista en clase (semana 4) y en el código que habíamos hecho para el ejercicio 3, ya que tenía una función para comparar elementos que nos servía para el MinHeap.
-- Para guardar las dependencias entre los módulos usamos listas de adyacencia, basándonos en las estructuras de grafos vistas en clase.
-- Usamos un arreglo para contar las dependencias pendientes de cada módulo y un MinHeap para guardar solamente los que estaban listos para compilar.
-- Por último, usamos un contador para saber cuántos módulos se habían compilado y así detectar si existía un ciclo.
+- Nos basamos en la implementación de heap binario vista en clase (semana 4) y reutilizamos la función de comparación que habíamos desarrollado para el ejercicio 3, adaptándola al MinHeap.
+- Para representar las dependencias entre los módulos mediante listas de adyacencia, nos basamos en las estructuras de grafos vistas en clase.
+- Desarrollamos la lógica para contar las dependencias pendientes, seleccionar los módulos listos para compilar y detectar ciclos.
 
 ## Ejercicio 5
-- Nos basamos en lo visto en clase de MFset y Kruskal, revise las diapositivas para ayudarme.
+- Nos basamos en los contenidos de MFSet y Kruskal vistos en clase y consultamos las diapositivas correspondientes para implementar la solución.
 
 ## General
-- Usamos chat gpt para revisar si las biblotecas estaban bien, y agregar en caso de que falten. También para revisar errores de sintaxis, por ejemplo saltearnos un ";".
+- Consultamos a ChatGPT para revisar si las bibliotecas incluidas eran adecuadas e identificar las que faltaban.
+- También utilizamos ChatGPT para detectar y corregir errores de sintaxis, como la omisión de un punto y coma.

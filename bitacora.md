@@ -9,12 +9,13 @@
   complejidad pide ..., así que ...
 
 ## 2026-09-10 — En conjunto
-- Hicimos el ejercicio 1 completo. Nos fue de gran ayuda lo visto en clase. Nos costo un poco entender bien lo del template. 
-- Falta hacer las pruebas.
+- Implementamos el ejercicio 1 basándonos en lo visto en clase. Nos costó comprender cómo utilizar template en la implementación.
+- Quedaron pendientes las pruebas.
 
 ## 2026-09-13 — En conjunto
-- Hicimos el ejercicio 2 completo. Nos costo pensar como hacer para distinguir los cajones, ya que al principio pensabamos que cada bucket tenía que ser un cajón. Recién cuando entedimos que no fue que logramos pensar como hacerlo. Quisimos basarnos en lo que habiamos hecho en clase de hash cerrado, pero eso aunque un poco nos sirvió, nos terminó confundiendo al hacer las funciones ya que habiamos hecho muchas más de las que precisabamos para este ejercicio. 
-- Falta hacer las pruebas.
+- Implementamos el ejercicio 2. Al principio pensábamos que cada bucket debía representar un cajón, y eso nos dificultó plantear la solución. Cuando entendimos que no tenían que corresponderse directamente, pudimos avanzar.
+- Tomamos como referencia la implementación de hash cerrado vista en clase. Aunque nos sirvió como punto de partida, también nos confundió porque incluía más funciones de las que necesitábamos para este ejercicio.
+- Quedaron pendientes las pruebas.
 
 ## 2026-09-26 — Nicole
 - Hice el ejercicio 3. Primero repasé el código del heap y usé una función de comparación para que funcionara como un MinHeap, porque necesitaba obtener siempre los dos archivos de menor tamaño.
@@ -32,7 +33,11 @@
 
 ## 2026-10-17 — Nicole
 - Hice el ejercicio 5. Primero repasé cómo funcionaba Kruskal, porque tenía que conectar todos los refugios con el menor costo posible. Guardé los senderos en un vector y los ordené de menor a mayor costo usando una función para compararlos.
-- Después implementé la estructura de conjuntos disjuntos con un vector de padres y otro de alturas. En find usé compresión de caminos y en merge unión por altura, para colgar siempre el árbol más bajo del más alto.
+- Después implementé la estructura de conjuntos disjuntos con un vector de padres y otro llamado altura, utilizado como rango. En find usé compresión de caminos y en merge, unión por rango.
 - Fui recorriendo los senderos ordenados y, cuando sus extremos pertenecían a conjuntos distintos, los unía y sumaba el costo. Si ya estaban en el mismo conjunto, descartaba el sendero porque formaría un ciclo.
-- Usé m para contar cuántos iba agregando. Si al terminar tenía V - 1, todos los refugios estaban conectados; si no, imprimía “imposible”.
+- Usé elegidos para contar cuántos senderos iba agregando. Si al terminar tenía ver - 1, todos los refugios estaban conectados; si no, imprimía “imposible”. Si al terminar tenía V - 1, todos los refugios estaban conectados; si no, imprimía “imposible”.
 - Por último, usé long long para el costo total, porque la suma podía superar el rango de un int. También tuve en cuenta el caso de un solo refugio, donde el resultado es 0 porque no hace falta mantener ningún sendero.
+
+## 2026-10-20 — Inés
+- Realicé las pruebas de todos los ejercicios.
+- Corregí un error de compilación en el ejercicio 5.
